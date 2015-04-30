@@ -26,6 +26,8 @@ See following papers:
 
   3. [A tale of three next generation sequencing platforms: comparison of Ion Torrent, Pacific Biosciences and Illumina MiSeq sequencers](http://www.biomedcentral.com/1471-2164/13/341)
 
+[Other post on MiSeq errors on 600 cycle run](http://seqanswers.com/forums/showthread.php?t=40879)
+
 #### Error rates of polymerase from experimental data
 
 [Error Rate Comparison during Polymerase Chain Reaction by DNA Polymerase](http://www.hindawi.com/journals/mbi/2014/287430/)
@@ -55,4 +57,10 @@ See following papers:
 
 [Earth Microbiome protocol](http://www.earthmicrobiome.org/emp-standard-protocols/16s/) reports pcr for 35 cycles.
 
-Wrote script for each error polymerase type
+Wrote script for each error polymerase type -
+
+[wgsim](https://github.com/lh3/wgsim) won't work for amplicon data, so I built off of the Grinder script from this paper: [Grinder: a versatile amplicon and shotgun sequence simulator](http://nar.oxfordjournals.org/content/40/12/e94)
+
+For Grinder to work, the script needs to be compiled with perl on linux based computers (BSD Mac); ```cpan``` needs to be invoked:
+
+```sudo cpan -i Getopt::Euclid && sudo cpan -i Math::Random::MT```
