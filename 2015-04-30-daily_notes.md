@@ -61,6 +61,6 @@ Wrote script for each error polymerase type -
 
 [wgsim](https://github.com/lh3/wgsim) won't work for amplicon data, so I built off of the Grinder script from this paper: [Grinder: a versatile amplicon and shotgun sequence simulator](http://nar.oxfordjournals.org/content/40/12/e94)
 
-For Grinder to work, the script needs to be compiled with perl on linux based computers (BSD Mac); ```cpan``` needs to be invoked:
+For Grinder to work, the script needs to be compiled with perl on linux based computers (BSD Mac); ```cpan``` needs to be invoked (for my perl installation on Mac, YMMV on other linux kernels):
 
 ```sudo cpan -i Getopt::Euclid && sudo cpan -i Math::Random::MT```
